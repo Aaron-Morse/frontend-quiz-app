@@ -1,0 +1,46 @@
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary-font-color);
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--secondary-font-color);
+}
+
+section {
+  margin-top: 2.5rem;
+}
+
+p {
+  color: var(--primary-font-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  background-color: var(--secondary-bg-color);
+  border-radius: 0.75rem;
+}
+
+.imageContainer {
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.imageContainer img {
+  scale: 0.7;
+}

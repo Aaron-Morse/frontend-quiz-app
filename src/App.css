@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #f4f6fa;
+  --secondary-bg-color: #fff;
+  --primary-font-color: #2d2d2d;
+  --secondary-font-color: #626c7f;
+  --mobile-bg-image: url("../src/assets/images/pattern-background-mobile-light.svg");
+  --toggle-bg-color: #a729f5;
+  --toggle-btn-color: #fff;
+}
+
+.dark:root {
+  --primary-bg-color: #313e51;
+  --secondary-bg-color: #3b4d66;
+  --primary-font-color: #fff;
+  --secondary-font-color: #abc1e1;
+  --mobile-bg-image: url("../src/assets/images/pattern-background-mobile-dark.svg");
+  --toggle-bg-color: #a729f5;
+  --toggle-btn-color: #fff;
+}
+
+body {
+  height: 100vh;
+  background-color: #282828;
+  font-family: "Rubik";
+  background-color: var(--primary-bg-color);
+  background-image: var(--mobile-bg-image);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: ease all 0.5s;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  padding: 2rem 1.5rem;
+}
