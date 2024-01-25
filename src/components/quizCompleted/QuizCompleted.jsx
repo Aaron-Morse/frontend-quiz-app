@@ -3,16 +3,16 @@ import QuizBadge from "../quizBadge/QuizBadge";
 import styles from "./quizcompleted.module.css";
 
 export default function QuizCompleted({
-  correctCount,
   quiz,
   setQuiz,
   setCount,
-  setCorrectCount,
+  score,
+  setScore,
 }) {
   const reset = () => {
     setQuiz(null);
     setCount(0);
-    setCorrectCount(0);
+    setScore(0);
   };
 
   return (
@@ -22,7 +22,7 @@ export default function QuizCompleted({
       </h1>
       <div className={styles.container}>
         <QuizBadge quiz={quiz} />
-        <p className={styles.score}>{correctCount}</p>
+        <p className={styles.score}>{score}</p>
         <span>out of 10</span>
       </div>
       <button className={styles.button} onClick={() => reset()}>

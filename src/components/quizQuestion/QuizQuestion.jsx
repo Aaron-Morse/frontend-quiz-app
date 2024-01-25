@@ -8,7 +8,7 @@ export default function QuizQuestion({
   quiz,
   count,
   setCount,
-  setCorrectCount,
+  setScore,
 }) {
   const [guess, setGuess] = useState(null);
   const [submitted, setSbumitted] = useState(false);
@@ -30,7 +30,7 @@ export default function QuizQuestion({
     event.preventDefault();
     if (guess) {
       setSbumitted(true);
-      setCorrectCount((prev) => prev + (guess === answer ? 1 : 0));
+      setScore((prev) => prev + (guess === answer ? 1 : 0));
     } else {
       setError(true);
     }

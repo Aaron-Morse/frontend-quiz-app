@@ -9,7 +9,7 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [quiz, setQuiz] = useState(null);
   const [count, setCount] = useState(0);
-  const [correctCount, setCorrectCount] = useState(0);
+  const [score, setScore] = useState(0);
 
   useEffect(() => {
     if (darkMode) {
@@ -33,16 +33,16 @@ export default function App() {
             quiz={quiz}
             count={count}
             setCount={setCount}
-            setCorrectCount={setCorrectCount}
+            setScore={setScore}
           />
         )}
         {count === 10 && (
           <QuizCompleted
-            correctCount={correctCount}
             quiz={quiz}
             setQuiz={setQuiz}
             setCount={setCount}
-            setCorrectCount={setCorrectCount}
+            score={score}
+            setScore={setScore}
           />
         )}
       </main>
