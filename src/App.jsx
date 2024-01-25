@@ -10,7 +10,6 @@ export default function App() {
   const [quiz, setQuiz] = useState(null);
   const [count, setCount] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
-  console.log(correctCount);
 
   useEffect(() => {
     if (darkMode) {
